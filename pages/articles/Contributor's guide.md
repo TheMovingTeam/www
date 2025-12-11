@@ -2,8 +2,7 @@
 eleventyExcludeFromCollections: true
 title: "A contributor's guide to Move"
 description: Detailing how you can help the Move transit app support your location.
-thumbnail: hos
-date: 2025-11-26
+thumbnail: contributor's guide
 
 author: Azakidev
 ---
