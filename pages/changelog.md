@@ -8,12 +8,12 @@ tags: destination
 
 Here are the latest changes for the Move app.
 
-## 0.13 - ???
-
-> - New widget for favourite stops
-> - New map for indicating the position of stops
-> - Optimized networking logic
-> - UI fixes and improvements
+<!-- ## 0.13 - Upcoming ;) -->
+<!---->
+<!-- > - New widget for favourite stops -->
+<!-- > - New map for indicating the position of stops -->
+<!-- > - Optimized networking logic -->
+<!-- > - UI fixes and improvements -->
 
 ## 0.12 - November 12, 2025
 

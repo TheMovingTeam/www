@@ -2,8 +2,7 @@
 eleventyExcludeFromCollections: true
 title: "The Move Data Format"
 description: Detailing the data format of the Move transit app
-thumbnail: placeholder
-date: 2025-11-25
+thumbnail: data_format
 
 author: Azakidev
 ---
