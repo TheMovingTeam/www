@@ -104,4 +104,4 @@ We may notify you about future changes by prominently posting any changes or by 
 If you have any questions or want to request a deletion of part or the entirety of your data provided to us, you may do so in the following ways:
 
 > - Our social media channels
-> - Contacting our lead developer through [this email address](mailto:zazaguichi@outlook.com)
+> - Contacting our lead developer through [this email address](mailto:support@movetransit.app)
