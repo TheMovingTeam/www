@@ -5,6 +5,7 @@ description: Move is a universal public transit app for android that allows user
 keywords: public transit app, bus app
 
 signUpOpen: false
+formUrl: https://mail.movetransit.app
 isHero: true
 ---
 
