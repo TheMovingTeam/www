@@ -1,14 +1,23 @@
-<form id="signForm">
+<form method="post" action="{{ formUrl }}/subscription/form" id="signForm">
     <div class="vc ac">
         <span>Sign up for the wait-list</span>
-        <input type="hidden" name="_gotcha" style="display:none !important">
+
+        <input type="hidden" name="nonce">
+
+        <p style="display: none !important;">
+            <input id="550ee" type="checkbox" name="l" checked value="550eecf5-7a08-4c18-8169-de987c92d8b2" />
+            <label for="550ee">Wait-List</label>
+            <br>
+            <span>The wait-list and newsletter for Move</span>
+        </p>
+
         <div class="hc">
-            <input id="email" type="email" name="email" autocomplete="email" placeholder="Email address"
-                required>
-            <button id="submit" type="submit" value="Submit">
+            <input id="email" type="email" name="email" autocomplete="email" placeholder="E-mail address" required>
+            <button id="submit" type="submit" value="Subscribe ">
                 <img src="media/logo-arrow.svg">
             </button>
         </div>
         <span class="footnote">It must be liked to your Google Play account</span>
+
     </div>
 </form>
