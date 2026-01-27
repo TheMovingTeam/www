@@ -31,6 +31,10 @@ footer {
     & .vc {
         align-items: start;
 
+        &:has(#socials) :not(#socials) {
+            align-self: flex-end;
+        }
+
     }
 
     & .jsb {

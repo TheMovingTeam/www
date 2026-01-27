@@ -305,7 +305,7 @@ form {
 }
 
 #featureContainer {
-    --featuresWidth: 40ch;
+    --featuresWidth: 50ch;
     width: var(--featuresWidth);
     margin: var(--margin);
     margin-bottom: 0;
@@ -388,6 +388,10 @@ form {
 
     & #providerScroller {
         animation: scroll 6s linear infinite forwards;
+
+        &:hover {
+            animation-play-state: paused;
+        }
     }
 
     & img {

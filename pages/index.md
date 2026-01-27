@@ -85,7 +85,7 @@ Features are constantly being added and planned for Move. Providers are also bei
 <div class="hc ac reflow jse card">
 
 {% if not signUpOpen %}
-## Sign-ups coming soon!
+## Open Beta Coming soon!
 {% else %}
 {% include "./_includes/components/signupForm.njk" %}
 {% endif %}

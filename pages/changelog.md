@@ -8,12 +8,13 @@ tags: destination
 
 Here are the latest changes for the Move app.
 
-## 0.14 - TBD
+## 1.0-rc - TBD
 
 > - Add support for Llorente Bus
 > - Add stop images for select providers
 > - \[BREAKING\] Fix conflicts between providers
 > - \[BREAKING\] Use locally assigned IDs for providers
+> - \[BREAKING\] Data format changes to accommodate the new map functionality and avoid future breaking changes
 > - UI fixes and improvements
 
 ## 0.13 - December 11, 2025
