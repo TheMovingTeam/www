@@ -5,24 +5,41 @@
         </div>
         <div class="hc">
             <div class="vc">
-                <p class="logo">Move</p>
+                <a class="logo" 
+                    {% if title != "Universal transit app" %}
+                    hreflang="{{ page.lang }}"
+                    href="/{{ page.lang }}"
+                    {% else %}
+                    href="#top"
+                    {% endif %}
+                    >
+                    Move
+                </a>
                 {% for entry in collections.destination | reverse %}
                 {%- if entry.data.title != title %}
+                {%- if entry.page.lang == page.lang -%}
                 <a class="entry" href="{{entry.url}}">{{ entry.data.title }}</a>
+                {%- endif -%}
                 {%- endif %}
                 {% endfor %}
+                <div class="hc ae">
+                    <p>{{ strings[page.lang].footer.alsoIn }}</p>
+                    {% for link in page.url | locale_links %} {%- if not loop.first %}/{% endif %}
+                    <a href="{{ link.url }}" lang="{{ link.lang }}" hreflang="{{ link.lang }}">{{link.label}}</a>
+                    {% endfor %}
+                </div>
             </div>
             <div class="vc jsb">
-                <p>Made with ❤️ with 11ty</p>
+                <p>{{ strings[page.lang].footer.love }}</p>
                 <div class="vc">
-                    <p class="subtext">Follow Move</p>
+                    <p class="subtext">{{ strings[page.lang].footer.follow }}</p>
                     <div class="hc ac" id="socials">
                         {% for item in socials %}
                         <a href="{{ item.link }}" title="{{ item.id }}"><i class="fa-brands {{ item.icon }}"></i></a>
                         {% endfor %}
                     </div>
                 </div>
-                <span class="subtext" id="copyright">© FatDawlf, 2025</span>
+                <span class="subtext" id="copyright">© FatDawlf, 2025-2026</span>
             </div>
         </div>
     </div>

@@ -30,7 +30,7 @@ In the meantime, you may sign for the wait-list to be notified when it's finally
 It won't spam your inbox, only updates will be shared.
 
 <div class="gc">
-    <a class="accentButton" href="/#sign-up">Sign up for the wait-list!</a>
+    <a class="accentButton" href="/#sign-up">{{ strings[page.lang].signUp }}</a>
 </div>
 
 ## Why?

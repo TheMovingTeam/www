@@ -1,0 +1,59 @@
+---
+permalink: 404.html
+eleventyExcludeFromCollections: true
+---
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Page Not Found</title>
+    <script>
+        const supportedLangs = ['en', 'es'];
+
+        var userLang = navigator.language || navigator.userLanguage; 
+        if (userLang.startsWith('es')) {
+          const defaultLang = "es";
+        } else {
+          const defaultLang = "en";
+        }
+
+        async function handle404() {
+            const path = window.location.pathname;
+            const segments = path.split('/').filter(Boolean);
+            
+            // 1. Check if they are already on a localized path
+            const currentLang = supportedLangs.includes(segments[0]) ? segments[0] : null;
+
+            // 2. If NOT localized (e.g., /my-article/), try to redirect to default lang
+            if (!currentLang) {
+                const newPath = `${defaultLang}${path}`;
+                window.location.replace(newPath);
+                return;
+            }
+
+            // 3. If they ARE localized but it's still a 404 (e.g., /en/wrong-page)
+            // Show the localized UI
+            document.documentElement.lang = currentLang;
+            const newPath = `404`;
+            window.location.replace(newPath);
+            document.getElementById('msg-' + currentLang).style.display = 'block';
+        }
+
+        window.onload = handle404;
+    </script>
+    <style>
+        .error-msg { display: none; font-family: sans-serif; padding: 2rem; }
+    </style>
+</head>
+<body>
+    <div id="msg-en" class="error-msg">
+        <h1>Redirecting</h1>
+        <p>Finding the page you're looking for...</p>
+    </div>
+    <div id="msg-es" class="error-msg">
+        <h1>Redirigiendo</h1>
+        <p>Buscando la página que buscas...</p>
+    </div>
+</body>
+</html>

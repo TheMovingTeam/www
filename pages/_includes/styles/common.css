@@ -136,6 +136,10 @@ p:empty {
         align-items: center;
     }
 
+    &.ae {
+        align-items: end;
+    }
+
     &.fw {
         flex-wrap: wrap;
     }

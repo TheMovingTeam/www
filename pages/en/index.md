@@ -18,7 +18,7 @@ isHero: true
 
 The universal public transit app
 
-<a class="accentButton" href="#sign-up">Sign up for the wait-list!</a>
+<a class="accentButton" href="#sign-up">{{ strings[page.lang].signUp }}</a>
 
 </div>
 {% include "./_includes/components/blobs.njk" %}
@@ -57,7 +57,7 @@ Move is fast, giving you the information of your favorite stops as fast as possi
 
 ## All in one place
 
-Traveling often?<br>
+Traveling often?<br><br>
 Move unifies all of your transit services in one place so you can just plan your transfers.
 
 </div>
