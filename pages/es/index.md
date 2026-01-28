@@ -1,7 +1,7 @@
 ---
 layout: main.njk
 title: La app de Tránsito Universal
-description: Move is a universal public transit app for android that allows users to check the time estimates for buses, tram and other methods of transit in a fast and efficient mannerMove es una aplicación de transporte público universal para Android que permite a los usuarios consultar las estimaciones de tiempo de autobuses, tranvías y otros métodos de transporte de forma rápida y eficiente.
+description: Move es una aplicación de transporte público universal para Android que permite a los usuarios consultar las estimaciones de tiempo de autobuses, tranvías y otros métodos de transporte de forma rápida y eficiente.
 keywords: public transit app, bus app
 
 signUpOpen: false
