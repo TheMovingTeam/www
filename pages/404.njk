@@ -10,12 +10,13 @@ eleventyExcludeFromCollections: true
     <title>Page Not Found</title>
     <script>
         const supportedLangs = ['en', 'es'];
+        var defaultLang = "en"
 
         var userLang = navigator.language || navigator.userLanguage; 
         if (userLang.startsWith('es')) {
-          const defaultLang = "es";
+          defaultLang = "es";
         } else {
-          const defaultLang = "en";
+          defaultLang = "en";
         }
 
         async function handle404() {
@@ -27,16 +28,17 @@ eleventyExcludeFromCollections: true
 
             // 2. If NOT localized (e.g., /my-article/), try to redirect to default lang
             if (!currentLang) {
-                const newPath = `${defaultLang}${path}`;
+                const newPath = `/${defaultLang}${path}`;
                 window.location.replace(newPath);
                 return;
+            } else {
+                const newPath = `404`;
+                window.location.replace(newPath);
             }
 
             // 3. If they ARE localized but it's still a 404 (e.g., /en/wrong-page)
             // Show the localized UI
             document.documentElement.lang = currentLang;
-            const newPath = `404`;
-            window.location.replace(newPath);
             document.getElementById('msg-' + currentLang).style.display = 'block';
         }
 
