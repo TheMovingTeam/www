@@ -11,7 +11,7 @@ tags: destination
 
 Este artículo describe cómo se recopilan, almacenan, utilizan y/o comparten ("procesan") sus datos al usar Move ("la aplicación", "la app", etc.) o cualquier servicio del equipo de Move ("nosotros", "nos", etc.).
 
-## TL;DR
+## En resumen
 
 > 1. Sus datos se almacenan principalmente en su dispositivo.
 > 2. Sus datos no se comparten con terceros.

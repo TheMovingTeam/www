@@ -22,7 +22,7 @@
                 {%- endif -%}
                 {%- endif %}
                 {% endfor %}
-                <div class="hc ae">
+                <div class="hc ae reflow">
                     <p>{{ strings[page.lang].footer.alsoIn }}</p>
                     {% for link in page.url | locale_links %} {%- if not loop.first %}/{% endif %}
                     <a href="{{ link.url }}" lang="{{ link.lang }}" hreflang="{{ link.lang }}">{{link.label}}</a>
@@ -30,16 +30,16 @@
                 </div>
             </div>
             <div class="vc jsb">
-                <p>{{ strings[page.lang].footer.love }}</p>
+                <p class="te">{{ strings[page.lang].footer.love }}</p>
                 <div class="vc">
-                    <p class="subtext">{{ strings[page.lang].footer.follow }}</p>
+                    <p class="subtext te">{{ strings[page.lang].footer.follow }}</p>
                     <div class="hc ac" id="socials">
                         {% for item in socials %}
                         <a href="{{ item.link }}" title="{{ item.id }}"><i class="fa-brands {{ item.icon }}"></i></a>
                         {% endfor %}
                     </div>
                 </div>
-                <span class="subtext" id="copyright">© FatDawlf, 2025-2026</span>
+                <span class="subtext te" id="copyright">© FatDawlf, 2025-2026</span>
             </div>
         </div>
     </div>
