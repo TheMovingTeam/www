@@ -1,0 +1,29 @@
+en:
+  signUp: Sign up for the newsletter!
+  supportedProviders: Supported providers
+  footer:
+    alsoIn: 'Page also available in: '
+    love: Made with ❤️ with 11ty
+    follow: Follow Move
+  recentArticles:
+    section: Recent articles
+    title: More articles
+    desc: Read all other articles here.
+  form:
+    placeholder: Email address
+    note: It must be liked to your Google Play account
+
+es:
+  signUp: ¡Apúntate al newsletter!
+  supportedProviders: Proveedores soportados
+  footer:
+    alsoIn: 'Página tambíen disponible en: '
+    love: Hecho con ❤️ con 11ty
+    follow: Sígue a Move
+  recentArticles:
+    section: Artículos recientes
+    title: Más artículos
+    desc: Lee todos los artículos aquí.
+  form:
+    placeholder: Dirección de Email
+    note: Debe estar enlazada a tu cuenta de Google Play

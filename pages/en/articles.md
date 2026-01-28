@@ -16,6 +16,7 @@ Read up on all articles about the Move transit app
 </div>
 <div class="hc ac jse fw reflow" id="articleList">
 {% for article in collections.articles reversed %}
+{%- if article.data.lang == page.lang -%}
 <div class="article card vc">
 <a href="{{ article.fileSlug | slugify }}">
 <img src="/media/thumbs/{{ article.data.thumbnail }}.png" loading="lazy" alt="">
@@ -29,5 +30,6 @@ Read up on all articles about the Move transit app
 </div>
 </a>
 </div>
+{%- endif -%}
 {% endfor %}
 </div>

@@ -18,6 +18,10 @@
             align-self: auto !important;
         }
     }
+
+    .ae.reflow {
+        align-items: start !important;
+    }
 }
 
 @media only screen and (width > 768px) {
@@ -136,6 +140,10 @@ p:empty {
         align-items: center;
     }
 
+    &.ae {
+        align-items: end;
+    }
+
     &.fw {
         flex-wrap: wrap;
     }
@@ -160,6 +168,10 @@ p:empty {
 
 .tc {
     text-align: center;
+}
+
+.te {
+    text-align: end;
 }
 
 a.accentButton {

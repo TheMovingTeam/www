@@ -8,6 +8,15 @@ tags: destination
 
 Here are the latest changes for the Move app.
 
+## 1.0-rc - TBD
+
+> - \[BREAKING\] Fix conflicts between providers
+> - \[BREAKING\] Use locally assigned IDs for providers
+> - \[BREAKING\] Data format changes to accommodate the new map functionality and avoid future breaking changes
+> - Add support for Llorente Bus
+> - Add stop images for select providers
+> - UI fixes and improvements
+
 ## 0.13 - December 11, 2025
 
 > - New widget for favourite stops
@@ -56,11 +65,7 @@ Here are the latest changes for the Move app.
 > - Add support for Vectalia Cáceres
 > - Add support for Vectalia Mérida
 
-## 0.7 - October 8, 2025
-
-> - Fix the sorting of lines, broken in 0.6
-
-## 0.6 - October 8, 2025
+## 0.6, 0.7 - October 8, 2025
 
 > - Add support for Metrovalencia
 > - Better line sorting in lines page

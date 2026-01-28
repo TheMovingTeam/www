@@ -1,3 +1,9 @@
 - id: Twitter
   link: https://twitter.com/movetransit
   icon: fa-twitter
+- id: Patreon
+  link: https://patreon.com/movetransit
+  icon: fa-patreon
+- id: Github
+  link: https://github.com/TheMovingTeam
+  icon: fa-github

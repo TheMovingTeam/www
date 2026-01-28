@@ -2,7 +2,8 @@
     <div class="hc ac jsb reflow">
         <a class="logo" 
             {% if title != "Universal transit app" %}
-            href="/"
+            hreflang="{{ page.lang }}"
+            href="/{{ page.lang }}"
             {% else %}
             href="#top"
             {% endif %}
@@ -13,12 +14,14 @@
         <div class="hc ac jc fw">
             {% for entry in collections.destination | reverse %}
             {%- if entry.data.title != title %}
+            {%- if entry.page.lang == page.lang -%}
             <a class="entry" href="{{entry.url}}">{{ entry.data.title | firstWord }}</a>
+            {%- endif -%}
             {%- endif %}
             {% endfor %}
 
             {% if not isHero %}
-            <a class="accentButton" href="/#sign-up">Sign up for the waitlist</a>
+            <a class="accentButton" href="/#sign-up">{{ strings[page.lang].signUp }}</a>
             {% endif %}
         </div>
     </div>

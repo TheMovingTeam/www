@@ -1,0 +1,28 @@
+---
+permalink: /index.html
+eleventyExcludeFromCollections: true
+---
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Redirecting...</title>
+    <link rel="canonical" href="{{ metadata.url }}/en/">
+    <meta http-equiv="refresh" content="0; url=/en/">
+    <script>
+        var userLang = navigator.language || navigator.userLanguage;
+        if (userLang.startsWith('es')) {
+            window.location.href = "/es/";
+        } else {
+            window.location.href = "/en/";
+        }
+    </script>
+</head>
+
+<body>
+    <p>Please follow <a href="/en/">this link</a>.</p>
+</body>
+
+</html>

@@ -1,4 +1,4 @@
-import { IdAttributePlugin } from "@11ty/eleventy"
+import { IdAttributePlugin, EleventyI18nPlugin } from "@11ty/eleventy"
 import { minify } from "terser";
 import YAML from "yaml";
 import { format } from "date-fns"
@@ -15,6 +15,12 @@ export default async function(eleventyConfig) {
     // Plugins
     eleventyConfig.addPlugin(IdAttributePlugin);
 
+    eleventyConfig.addPlugin(EleventyI18nPlugin, {
+        defaultLanguage: 'en',
+        errorMode: 'allow-fallback'
+    });
+
+    // Filters
     eleventyConfig.addFilter("jsmin", async function(code) {
         try {
             const minified = await minify(code);
@@ -34,7 +40,7 @@ export default async function(eleventyConfig) {
     eleventyConfig.addFilter("firstWord", (str) => {
         return str.split(" ")[0]
     });
-    
+
     eleventyConfig.addFilter('date', function(date, dateFormat) {
         return format(date, dateFormat)
     });
@@ -42,6 +48,12 @@ export default async function(eleventyConfig) {
     eleventyConfig.addFilter("head", (arr, num) => {
         return num ? arr.slice(0, num) : arr;
     });
+
+    eleventyConfig.addFilter("langFilter", function(arr) {
+        return arr.filter((it) => {
+            it.page.lang == this.page.lang
+        })
+    })
 
     eleventyConfig.addDataExtension("yaml", (contents) => YAML.parse(contents))
 };
