@@ -8,7 +8,12 @@ tags: destination
 
 Aquí están los últimos cambios para la aplicación Move.
 
-## 1.0-rc - TBD
+## 1.0-rc2 - 17 de Febrero, 2026
+
+> - Arregla el escáner QR, roto en la versión anterior
+> - Mejora y arreglos de interfaz
+
+## 1.0-rc - 1 de Febrero, 2026
 
 > - \[BREAKING\] Arregla interferencias en paradas recientes o favoritas
 > - \[BREAKING\] Usa identificadores asignados localmente para los proveedores
