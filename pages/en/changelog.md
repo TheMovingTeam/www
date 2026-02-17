@@ -8,7 +8,12 @@ tags: destination
 
 Here are the latest changes for the Move app.
 
-## 1.0-rc - TBD
+## 1.0-rc2 - February 17, 2026
+
+> - Fix the QR scanner, broken in the previous version
+> - UI fixes and improvements
+
+## 1.0-rc - February 1, 2026
 
 > - \[BREAKING\] Fix conflicts between providers
 > - \[BREAKING\] Use locally assigned IDs for providers
