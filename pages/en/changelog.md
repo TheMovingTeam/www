@@ -8,6 +8,12 @@ tags: destination
 
 Here are the latest changes for the Move app.
 
+## 1.0-rc3 - March 15, 2026
+
+> - Changed internal representation of providers and added a migration from the older models
+> - Added a button to quickly navigate to a selected stop in Google Maps
+> - UI fixes and improvements
+
 ## 1.0-rc2 - February 17, 2026
 
 > - Fix the QR scanner, broken in the previous version
