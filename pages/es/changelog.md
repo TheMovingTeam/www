@@ -8,6 +8,12 @@ tags: destination
 
 Aquí están los últimos cambios para la aplicación Move.
 
+## 1.0-rc3 - 15 de Marzo, 2026
+
+> - Se modificó la representación interna de los proveedores y se agregó una migración desde los modelos anteriores
+> - Se ha añadido un botón para navegar rápidamente a una parada seleccionada en Google Maps
+> - Mejora y arreglos de interfaz
+
 ## 1.0-rc2 - 17 de Febrero, 2026
 
 > - Arregla el escáner QR, roto en la versión anterior
