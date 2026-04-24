@@ -8,6 +8,11 @@ tags: destination
 
 Here are the latest changes for the Move app.
 
+## 1.0 - April 24, 2026
+
+> - Fixes to the loading of stops and lines upon opening the app
+> - UI fixes and improvements
+
 ## 1.0-rc3 - March 15, 2026
 
 > - Changed internal representation of providers and added a migration from the older models

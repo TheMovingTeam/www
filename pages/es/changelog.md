@@ -8,6 +8,11 @@ tags: destination
 
 Aquí están los últimos cambios para la aplicación Move.
 
+## 1.0 - April 24, 2026
+
+> - Arreglos al cargado de paradas y líneas al abrir la aplicación
+> - Mejora y arreglos de interfaz
+
 ## 1.0-rc3 - 15 de Marzo, 2026
 
 > - Se modificó la representación interna de los proveedores y se agregó una migración desde los modelos anteriores
