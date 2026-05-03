@@ -84,9 +84,17 @@ Features are constantly being added and planned for Move. Providers are also bei
 <section id="sign-up" class="gc">
 <div class="hc ac reflow jse card">
 
-{% if not signUpOpen %}
-## Open Beta Coming soon!
-{% else %}
+<div class="vc jc ac">
+
+## Get it now!
+
+<a id="gpButton" href="https://play.google.com/store/apps/details?id=io.github.azakidev.move" aria-role="button">
+    <img src="/media/badges/gp_en.svg" title="Get Move on Google Play">
+</a>
+
+</div>
+
+{% if signUpOpen %}
 {% include "./_includes/components/signupForm.njk" %}
 {% endif %}
 
